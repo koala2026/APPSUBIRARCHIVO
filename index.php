@@ -20,26 +20,15 @@ if(isset($_POST['boton'])){
             echo "La extensión del Archivo no es la adecuada";
         }
 
+    }
 
 
-}
 
 
 
 
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -62,6 +51,7 @@ if(isset($_POST['boton'])){
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -85,7 +75,7 @@ if(isset($_POST['boton'])){
              
         </div>
 
-        <div class="card-block">
+        <div class="card-block" >
             <div class="row">
 
         <?php
@@ -93,13 +83,18 @@ if(isset($_POST['boton'])){
 
                 while($archivo=readdir($dir)){
                     if($archivo != '.' && $archivo != '..'){
-                        echo "Archivo: <strong>$archivo</strong><br> />";
-                        echo $directorio . $archivo;
+                        echo'<div class="col-sm-3 col-xs-12">';
+                        echo "Archivo: <strong>$archivo</strong>";
+                        echo '<img src="1.png" style= "width:30px; height:30px;" '
+                         .$directorio . '/' .$archivo. ' title="archivo" />';
+
+                         echo '</div>';
                     }
                     
                 }
 
             }
+         
     ?>
             </div>
         </div>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <form action="enviar.php" method="post">
+
+
+        <h2>
+            "INSCRIPCION"
+            <br>
+            "CURSO GRATIS"
+
+        </h2>
+
+        <input type="text" name="Nombre" placeholder="Nombre" required>
+        <br><br>
+        <input type="text" name="Apellido" placeholder="Apellido" required>
+        <br><br>
+        <input type="text" name="Telefono" placeholder="Telefono" required>
+        <br><br>
+        <input type="text" name="Correo" placeholder="Correo" required>
+        <br><br>
+        <input type="text" name="Pais" placeholder="País" required>
+        <br><br>
+
+        <h3 style="color: blue;">Está Ud. Bautizado</h3>
+
+        <select name="bautismo" size="" placeholder="bautismo" required > 
+            <option value="Elija">ELIJA LA RESPUESTA</option>
+            <option value="SI">SI</option>
+            <option value="NO">NO</option>
+        </select>
+
+        <h3 style="color: blue;">Desea ser Ud. Bautizado</h3>
+        <select name="bautismo" size="" placeholder="bautismo" required>
+        <option value="Elija">ELIJA LA RESPUESTA</option>
+        <option value="SI">SI</option>
+        <option value="NO">NO</option>
+        </select>
+
+        
+        <h3 style="color: blue;">Curso de su Interés</h3>
+
+        <select name="Curso" size="" placeholder="Curso" required >
+            <option value="Elija">ELIJA LA RESPUESTA</option>
+            <option value="SI">Catecismo</option>
+            <option value="NO">Prácticas Biblicas</option>   
+        </select>
+        <br><br>
+        <h3>Tienes alguna información en Estudio Biblico</h3>
+        <textarea name="Mensaje" placeholder="Escriba brevemente su Experiencia" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="ENVIAR" id="boton" style="width: 60px;" >
+
+    </form>
+
+</body>
+</html>

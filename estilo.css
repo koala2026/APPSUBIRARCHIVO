@@ -1,0 +1,45 @@
+body{
+    background-image: url(sky.jpg);
+}
+
+form{
+
+    border: solid 10px;
+    width: 450px;
+    margin-top: auto;
+    background: burlywood;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    border-radius: 7px;
+    margin-left: 200px;
+
+
+
+
+}
+
+h2{
+    display: block;
+    background-color: chartreuse;
+
+}
+
+h3{
+    display: block;
+    background-color: aquamarine;
+    
+    
+}
+
+select{
+    width: 300px;
+}
+
+input{
+    width: 300px;
+}
+
+textarea{
+    width: 300px;
+}
